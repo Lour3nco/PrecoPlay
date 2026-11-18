@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Conheça a proposta do PreçoPlay, a equipe e fale com a gente.">
+  <title>Sobre a equipe e contato | PreçoPlay</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html" aria-label="PreçoPlay - página inicial">
+        <span class="logo-marca" aria-hidden="true">▶</span>
+        <span class="logo-texto">PREÇO<span>PLAY</span></span>
+      </a>
+
+      <nav aria-label="Menu principal">
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="catalogo.html">Catálogo</a></li>
+          <li><a href="promocoes.html">Promoções</a></li>
+          <li><a href="favoritos.html">Favoritos</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-acoes">
+        <a class="icone-btn destaque" href="favoritos.html" aria-label="Meus favoritos">♥</a>
+        <a class="icone-btn" href="sobre.html" aria-label="Sobre a equipe">☺</a>
+      </div>
+
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="barra-plataformas">
+      <div class="container barra-inner">
+        <a href="catalogo.html?plataforma=PC">🖥 PC</a>
+        <a href="catalogo.html?plataforma=PlayStation">PlayStation</a>
+        <a href="catalogo.html?plataforma=Xbox">Xbox</a>
+        <a href="catalogo.html?plataforma=Switch">Nintendo Switch</a>
+        <form class="busca-mini" id="form-busca" role="search">
+          <label class="sr-only" for="campo-busca">Buscar jogo</label>
+          <input type="search" id="campo-busca" placeholder="Buscar jogo..." autocomplete="off">
+          <button type="submit" class="busca-btn" aria-label="Buscar">⌕</button>
+        </form>
+      </div>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <div class="container">
+
+      <section class="secao sobre-texto" aria-labelledby="titulo-proposta">
+        <h1 class="secao-titulo" id="titulo-proposta">Sobre o PreçoPlay</h1>
+        <p>O <strong>PreçoPlay</strong> nasceu para ajudar jogadores a economizar. Em vez de visitar várias lojas, você compara os preços de cada jogo em um só lugar e escolhe a melhor oferta.</p>
+        <p><strong>Aviso:</strong> este é um projeto acadêmico. Os jogos, as lojas e os preços são fictícios e não representam ofertas reais.</p>
+
+        <h2>Como funciona a comparação</h2>
+        <div class="passos">
+          <div class="passo"><span class="numero">1</span><h3>Escolha o jogo</h3><p>Navegue pelo catálogo ou use a busca e os filtros.</p></div>
+          <div class="passo"><span class="numero">2</span><h3>Compare as lojas</h3><p>Na página do jogo, uma tabela mostra o preço em 4 lojas e destaca a mais barata.</p></div>
+          <div class="passo"><span class="numero">3</span><h3>Acompanhe</h3><p>Favorite o jogo e defina um preço alvo para ser avisado quando ele baixar.</p></div>
+        </div>
+      </section>
+
+      <section class="secao" aria-labelledby="titulo-equipe">
+        <h2 class="secao-titulo" id="titulo-equipe">Nossa equipe</h2>
+        <div class="equipe-grid">
+          <article class="membro-card"><div class="avatar" aria-hidden="true">1</div><h3>Lucas Lourenço</h3><p>Líder, página principal, Documentação e GitHub</p></article>
+          <article class="membro-card"><div class="avatar" aria-hidden="true">2</div><h3>Amhos Moraes</h3><p>CSS, identidade visual e Página do jogo</p></article>
+          <article class="membro-card"><div class="avatar" aria-hidden="true">3</div><h3>Carlos Guilherme</h3><p>Catálogo, filtros e Promoções e favoritos</p></article>
+        </div>
+      </section>
+
+      <section class="secao" aria-labelledby="titulo-contato">
+        <h2 class="secao-titulo" id="titulo-contato">Fale com a gente</h2>
+        <p class="secao-sub">A mensagem não é enviada de verdade: é só uma demonstração do formulário.</p>
+
+        <form class="form-contato" id="form-contato" novalidate>
+          <div class="campo">
+            <label for="contato-nome">Nome</label>
+            <input type="text" id="contato-nome" autocomplete="name">
+            <span class="erro-msg" role="alert"></span>
+          </div>
+          <div class="campo">
+            <label for="contato-email">E-mail</label>
+            <input type="email" id="contato-email" autocomplete="email">
+            <span class="erro-msg" role="alert"></span>
+          </div>
+          <div class="campo">
+            <label for="contato-mensagem">Mensagem</label>
+            <textarea id="contato-mensagem"></textarea>
+            <span class="erro-msg" role="alert"></span>
+          </div>
+          <button type="submit" class="btn btn-primario">Enviar mensagem</button>
+          <div class="msg-sucesso" id="msg-sucesso" role="status"></div>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3>PreçoPlay</h3>
+          <p>Projeto acadêmico de Desenvolvimento Web. Todos os preços e lojas são fictícios.</p>
+        </div>
+        <div>
+          <h3>Páginas</h3>
+          <ul>
+            <li><a href="catalogo.html">Catálogo</a></li>
+            <li><a href="promocoes.html">Promoções</a></li>
+            <li><a href="favoritos.html">Favoritos</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Equipe</h3>
+          <ul>
+            <li>Integrante 1</li>
+            <li>Integrante 2</li>
+            <li>Integrante 3</li>
+            <li><a href="https://github.com/usuario/repositorio" target="_blank" rel="noopener">Código no GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-copy">© 2026 PreçoPlay. Imagens criadas pela equipe. Nenhuma marca real utilizada.</p>
+    </div>
+  </footer>
+
+  <script src="data/jogos.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

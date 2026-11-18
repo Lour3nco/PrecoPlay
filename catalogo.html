@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Catálogo PreçoPlay: filtre jogos por plataforma, gênero e preço.">
+  <title>Catálogo | PreçoPlay</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html" aria-label="PreçoPlay - página inicial">
+        <span class="logo-marca" aria-hidden="true">▶</span>
+        <span class="logo-texto">PREÇO<span>PLAY</span></span>
+      </a>
+
+      <nav aria-label="Menu principal">
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="catalogo.html">Catálogo</a></li>
+          <li><a href="promocoes.html">Promoções</a></li>
+          <li><a href="favoritos.html">Favoritos</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-acoes">
+        <a class="icone-btn destaque" href="favoritos.html" aria-label="Meus favoritos">♥</a>
+        <a class="icone-btn" href="sobre.html" aria-label="Sobre a equipe">☺</a>
+      </div>
+
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="barra-plataformas">
+      <div class="container barra-inner">
+        <a href="catalogo.html?plataforma=PC">🖥 PC</a>
+        <a href="catalogo.html?plataforma=PlayStation">PlayStation</a>
+        <a href="catalogo.html?plataforma=Xbox">Xbox</a>
+        <a href="catalogo.html?plataforma=Switch">Nintendo Switch</a>
+        <form class="busca-mini" id="form-busca" role="search">
+          <label class="sr-only" for="campo-busca">Buscar jogo</label>
+          <input type="search" id="campo-busca" placeholder="Buscar jogo..." autocomplete="off">
+          <button type="submit" class="busca-btn" aria-label="Buscar">⌕</button>
+        </form>
+      </div>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <div class="container">
+      <div class="page-titulo">
+        <h1>Catálogo</h1>
+        <p class="catalogo-info" id="catalogo-info" aria-live="polite"></p>
+      </div>
+
+      <div class="catalogo-layout">
+        <aside class="filtros" aria-label="Filtros do catálogo">
+          <div class="filtro-grupo">
+            <label for="filtro-busca">Buscar por nome</label>
+            <input type="search" id="filtro-busca" placeholder="Ex.: Neon" autocomplete="off">
+          </div>
+          <div class="filtro-grupo">
+            <span class="filtro-titulo">Plataforma</span>
+            <div id="grupo-plataforma" style="display:grid;gap:10px"></div>
+          </div>
+          <div class="filtro-grupo">
+            <span class="filtro-titulo">Gênero</span>
+            <div class="chips" id="grupo-genero"></div>
+          </div>
+          <div class="filtro-grupo">
+            <label for="filtro-preco">Preço máximo</label>
+            <span class="valor-faixa" id="valor-preco"></span>
+            <input type="range" id="filtro-preco" min="0" max="200" step="10" value="200">
+          </div>
+          <div class="filtro-grupo">
+            <label for="filtro-ordem">Ordenar por</label>
+            <select id="filtro-ordem">
+              <option value="menor-preco">Menor preço</option>
+              <option value="desconto">Maior desconto</option>
+              <option value="alfabetica">Ordem alfabética</option>
+            </select>
+          </div>
+          <button type="button" class="btn btn-secundario" id="btn-limpar">Limpar filtros</button>
+        </aside>
+
+        <section class="grid-jogos" id="grade-catalogo" aria-label="Lista de jogos"></section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3>PreçoPlay</h3>
+          <p>Projeto acadêmico de Desenvolvimento Web. Todos os preços e lojas são fictícios.</p>
+        </div>
+        <div>
+          <h3>Páginas</h3>
+          <ul>
+            <li><a href="catalogo.html">Catálogo</a></li>
+            <li><a href="promocoes.html">Promoções</a></li>
+            <li><a href="favoritos.html">Favoritos</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Equipe</h3>
+          <ul>
+            <li>Integrante 1</li>
+            <li>Integrante 2</li>
+            <li>Integrante 3</li>
+            <li><a href="https://github.com/usuario/repositorio" target="_blank" rel="noopener">Código no GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-copy">© 2026 PreçoPlay. Imagens criadas pela equipe. Nenhuma marca real utilizada.</p>
+    </div>
+  </footer>
+
+  <script src="data/jogos.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/catalogo.js"></script>
+</body>
+</html>

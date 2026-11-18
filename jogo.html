@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Compare o preço do jogo em 4 lojas e veja o histórico de preço.">
+  <title>Detalhes do jogo | PreçoPlay</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html" aria-label="PreçoPlay - página inicial">
+        <span class="logo-marca" aria-hidden="true">▶</span>
+        <span class="logo-texto">PREÇO<span>PLAY</span></span>
+      </a>
+
+      <nav aria-label="Menu principal">
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="catalogo.html">Catálogo</a></li>
+          <li><a href="promocoes.html">Promoções</a></li>
+          <li><a href="favoritos.html">Favoritos</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-acoes">
+        <a class="icone-btn destaque" href="favoritos.html" aria-label="Meus favoritos">♥</a>
+        <a class="icone-btn" href="sobre.html" aria-label="Sobre a equipe">☺</a>
+      </div>
+
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="barra-plataformas">
+      <div class="container barra-inner">
+        <a href="catalogo.html?plataforma=PC">🖥 PC</a>
+        <a href="catalogo.html?plataforma=PlayStation">PlayStation</a>
+        <a href="catalogo.html?plataforma=Xbox">Xbox</a>
+        <a href="catalogo.html?plataforma=Switch">Nintendo Switch</a>
+        <form class="busca-mini" id="form-busca" role="search">
+          <label class="sr-only" for="campo-busca">Buscar jogo</label>
+          <input type="search" id="campo-busca" placeholder="Buscar jogo..." autocomplete="off">
+          <button type="submit" class="busca-btn" aria-label="Buscar">⌕</button>
+        </form>
+      </div>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <div class="container" id="conteudo-jogo">
+      <nav class="breadcrumb" id="jogo-breadcrumb" aria-label="Você está em">
+        <a href="catalogo.html">Catálogo</a>
+      </nav>
+
+      <section class="jogo-detalhe" aria-labelledby="jogo-nome">
+        <div class="jogo-capa" id="jogo-capa"></div>
+
+        <div class="jogo-info">
+          <h1 id="jogo-nome">Carregando...</h1>
+          <div class="jogo-tags" id="jogo-tags"></div>
+          <p class="jogo-descricao" id="jogo-descricao"></p>
+
+          <div class="caixa-preco">
+            <div class="linha-preco">
+              <span class="preco" id="jogo-preco"></span>
+              <span class="preco-antigo" id="jogo-preco-antigo"></span>
+            </div>
+            <span class="card-loja" id="jogo-loja"></span>
+            <div class="acoes">
+              <a class="btn btn-primario" id="btn-oferta" href="#comparacao">Ver oferta</a>
+              <button type="button" class="btn btn-secundario btn-favorito" id="btn-favorito" aria-pressed="false">♡ Favoritar</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="jogo-blocos">
+        <section class="bloco" id="comparacao" aria-labelledby="titulo-comparacao">
+          <h2 class="secao-titulo" id="titulo-comparacao">Comparação de preços</h2>
+          <div class="tabela-wrap">
+            <table class="tabela-precos">
+              <caption class="sr-only">Preço do jogo em cada loja</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Loja</th>
+                  <th scope="col">Preço</th>
+                  <th scope="col">Desconto</th>
+                  <th scope="col">Diferença</th>
+                </tr>
+              </thead>
+              <tbody id="tabela-corpo"></tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="bloco" aria-labelledby="titulo-historico">
+          <h2 class="secao-titulo" id="titulo-historico">Histórico de preço (6 meses)</h2>
+          <div id="grafico-area"></div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3>PreçoPlay</h3>
+          <p>Projeto acadêmico de Desenvolvimento Web. Todos os preços e lojas são fictícios.</p>
+        </div>
+        <div>
+          <h3>Páginas</h3>
+          <ul>
+            <li><a href="catalogo.html">Catálogo</a></li>
+            <li><a href="promocoes.html">Promoções</a></li>
+            <li><a href="favoritos.html">Favoritos</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Equipe</h3>
+          <ul>
+            <li>Integrante 1</li>
+            <li>Integrante 2</li>
+            <li>Integrante 3</li>
+            <li><a href="https://github.com/usuario/repositorio" target="_blank" rel="noopener">Código no GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-copy">© 2026 PreçoPlay. Imagens criadas pela equipe. Nenhuma marca real utilizada.</p>
+    </div>
+  </footer>
+
+  <script src="data/jogos.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/jogo.js"></script>
+</body>
+</html>
