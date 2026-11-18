@@ -4,9 +4,6 @@ Site de comparação de preços de games, feito como projeto acadêmico da disci
 
 > ⚠️ **Aviso:** jogos, lojas e preços são **fictícios**, guardados em `data/jogos.js`. Nenhuma marca real é utilizada.
 
-🔗 **Site publicado (GitHub Pages):** https://usuario.github.io/repositorio/
-📦 **Repositório:** https://github.com/usuario/repositorio
-
 ## Descrição
 
 O PreçoPlay ajuda o jogador a encontrar o **menor preço** de um jogo. Cada jogo tem o preço em 4 lojas fictícias (CofreGamer, NeonKeys, PixelFeira e Bazar Byte). O site compara os valores, destaca a loja mais barata, mostra o histórico de preço e permite favoritar jogos e definir um preço alvo.
