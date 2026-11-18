@@ -60,32 +60,14 @@ Não precisa instalar nada.
    ```
 2. Abra o arquivo `index.html` no navegador (duplo clique).
 
-## Prints
-
-| Página principal | Catálogo |
-|---|---|
-| ![Página principal](img/print-index.png) | ![Catálogo](img/print-catalogo.png) |
-
-| Detalhes do jogo | Promoções |
-|---|---|
-| ![Jogo](img/print-jogo.png) | ![Promoções](img/print-promocoes.png) |
-
-| Favoritos | Sobre |
-|---|---|
-| ![Favoritos](img/print-favoritos.png) | ![Sobre](img/print-sobre.png) |
-
 ## Equipe
 
 | Nome | Matrícula | Responsabilidade |
 |---|---|---|
-| [Nome completo] | [Matrícula] | [Função] |
-| [Nome completo] | [Matrícula] | [Função] |
-| [Nome completo] | [Matrícula] | [Função] |
-| [Nome completo] | [Matrícula] | [Função] |
-| [Nome completo] | [Matrícula] | [Função] |
-| [Nome completo] | [Matrícula] | [Função] |
+| [Lucas Lourenço] | [01588150] | [Líder, página principal, Documentação e GitHub] |
+| [Amhos Moraes] | [01589117] | [CSS, identidade visual e Página do jogo] |
+| [Carlos Guilherme] | [01589907] | [Catálogo, filtros e Promoções e favoritos] |
 
-Professor(a): [nome] · [cidade], 2026
 
 ## Créditos
 
