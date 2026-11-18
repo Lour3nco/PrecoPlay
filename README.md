@@ -64,9 +64,9 @@ Não precisa instalar nada.
 
 | Nome | Matrícula | Responsabilidade |
 |---|---|---|
-| [Lucas Lourenço] | [01588150] | [Líder, página principal, Documentação e GitHub] |
-| [Amhos Moraes] | [01589117] | [CSS, identidade visual e Página do jogo] |
-| [Carlos Guilherme] | [01589907] | [Catálogo, filtros e Promoções e favoritos] |
+| Lucas Lourenço | 01588150 | Líder, página principal, Documentação e GitHub |
+| Amhos Moraes | 01589117 | CSS, identidade visual e Página do jogo |
+| Carlos Guilherme | 01589907 | Catálogo, filtros e Promoções e favoritos |
 
 
 ## Créditos
