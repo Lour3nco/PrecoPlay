@@ -1,6 +1,6 @@
 # 🎮 PreçoPlay
 
-Site de comparação de preços de games, feito como projeto acadêmico da disciplina **[nome da disciplina]** – **[nome da faculdade]**.
+Site de comparação de preços de games, feito como projeto acadêmico da disciplina **Programação - Web Coding** – **UNINASSAU - GRAÇAS**.
 
 > ⚠️ **Aviso:** jogos, lojas e preços são **fictícios**, guardados em `data/jogos.js`. Nenhuma marca real é utilizada.
 
